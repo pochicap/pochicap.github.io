@@ -4,15 +4,51 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ポチキャプ サポート</title>
-<style>body{font-family:system-ui,-apple-system,"Segoe UI","Yu Gothic UI",sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem;line-height:1.7;color:#222}table{border-collapse:collapse}th,td{border:1px solid #ccc;padding:.4rem .6rem;vertical-align:top}code{background:#f3f3f3;padding:0 .2rem}nav{margin-bottom:1.5rem}.shot img{max-width:100%;height:auto;border:1px solid #ddd}</style>
+<style>body{font-family:system-ui,-apple-system,"Segoe UI","Yu Gothic UI",sans-serif;margin:0;line-height:1.7;color:#222}.page{max-width:46rem;margin:2rem auto;padding:0 1rem}main{min-width:0}table{border-collapse:collapse}th,td{border:1px solid #ccc;padding:.4rem .6rem;vertical-align:top}code{background:#f3f3f3;padding:0 .2rem}nav.site{margin-bottom:1.5rem}.shot img{max-width:100%;height:auto;border:1px solid #ddd}h2,h3{scroll-margin-top:1rem}.toc ul{list-style:none;padding-left:0;margin:.4rem 0}.toc li{margin:.25rem 0}.toc a{text-decoration:none}.toc a:hover{text-decoration:underline}.toc-title{font-weight:bold;margin:0}.toc-side{display:none}.toc-mobile{margin:0 0 1.5rem;border:1px solid #ddd;border-radius:6px;padding:.4rem .8rem;background:#fafafa}.toc-mobile summary{cursor:pointer;font-weight:bold}@media (min-width:64rem){.page{max-width:64rem;display:grid;grid-template-columns:12rem minmax(0,46rem);gap:2.5rem}.toc-side{display:block;position:sticky;top:1rem;align-self:start;max-height:calc(100vh - 2rem);overflow:auto;border-right:1px solid #e5e5e5;padding-right:1rem;font-size:.92rem}.toc-mobile{display:none}}</style>
 </head>
 <body>
-<nav><a href="../">ポチキャプ</a> ・ <a href="../privacy/">プライバシーポリシー</a> ・ <a href="../support/">サポート</a></nav>
+<div class="page">
+<aside class="toc toc-side" aria-label="目次">
+<p class="toc-title">目次</p>
+<ul>
+<li><a href="#about">はじめに</a></li>
+<li><a href="#after-install">インストールしたあとは</a></li>
+<li><a href="#quick-start">かんたんな使い方</a></li>
+<li><a href="#steps">画像付きの手順</a></li>
+<li><a href="#autostart">自動起動の設定</a></li>
+<li><a href="#shortcuts">ショートカット</a></li>
+<li><a href="#features">できること</a></li>
+<li><a href="#troubleshooting">困ったとき</a></li>
+<li><a href="#requirements">動作環境</a></li>
+<li><a href="#get-and-update">入手と更新</a></li>
+<li><a href="#uninstall">アンインストール</a></li>
+<li><a href="#contact">お問い合わせ</a></li>
+</ul>
+</aside>
+<main>
+<nav class="site"><a href="../">ポチキャプ</a> ・ <a href="../privacy/">プライバシーポリシー</a> ・ <a href="../support/">サポート</a></nav>
 <h1>ポチキャプ サポート</h1>
 <p>運営・お問い合わせ：ポチキャプ サポート</p>
-<h2>ポチキャプについて</h2>
+<details class="toc toc-mobile">
+<summary>目次</summary>
+<ul>
+<li><a href="#about">はじめに</a></li>
+<li><a href="#after-install">インストールしたあとは</a></li>
+<li><a href="#quick-start">かんたんな使い方</a></li>
+<li><a href="#steps">画像付きの手順</a></li>
+<li><a href="#autostart">自動起動の設定</a></li>
+<li><a href="#shortcuts">ショートカット</a></li>
+<li><a href="#features">できること</a></li>
+<li><a href="#troubleshooting">困ったとき</a></li>
+<li><a href="#requirements">動作環境</a></li>
+<li><a href="#get-and-update">入手と更新</a></li>
+<li><a href="#uninstall">アンインストール</a></li>
+<li><a href="#contact">お問い合わせ</a></li>
+</ul>
+</details>
+<h2 id="about">ポチキャプについて</h2>
 <p>ショートカットキー 1 回で、いま見ているウィンドウをキャプチャ。すぐに編集画面が開き、閉じるだけでクリップボードへコピーされます。AI チャットやチャット、メールなど、画像の貼り付けに対応したサービスへ貼り付けて、画面を分かりやすく見せられます。タスクトレイに常駐します。アカウント登録・広告はありません。</p>
-<h2>インストールしたあとは</h2>
+<h2 id="after-install">インストールしたあとは</h2>
 <p>ポチキャプを起動しても、大きな画面は開きません。タスクトレイ（画面右下の通知領域）にアイコンが表示され、待機します。</p>
 <p class="shot"><img src="img/tray-location.png" alt="タスクトレイの位置の図解：タスクバーの右端にポチキャプのアイコンがある場合と、「^」を押すと開く一覧の中にある場合" width="960" height="330" loading="lazy"></p>
 <ul>
@@ -22,14 +58,24 @@
 <li><strong>Windows を再起動したあと</strong>：ポチキャプは自動では起動しません。スタートメニューの「ポチキャプ」から起動してください。</li>
 <li>すでに起動しているときに、スタートメニューからもう一度起動しても、新しい画面は開きません。タスクトレイのアイコンをご確認ください。</li>
 </ul>
-<h2>かんたんな使い方</h2>
+<h3 id="autostart">Windows へのサインイン時に自動で起動するには</h3>
+<p>現在のバージョンでは、自動起動は標準では有効になっていません。必要な場合は、Windows のスタートアップ機能を使って設定できます。</p>
+<p class="shot"><img src="img/startup-register.png" alt="スタートアップへの登録の図解：shell:AppsFolder で開いたアプリの一覧から、ポチキャプを shell:startup で開いたスタートアップ フォルダーへドラッグする" width="960" height="380" loading="lazy"></p>
+<ol>
+<li><strong>Win+R</strong> を押し、<code>shell:startup</code> と入力して Enter を押します（スタートアップ フォルダーが開きます）。</li>
+<li>もう一度 <strong>Win+R</strong> を押し、<code>shell:AppsFolder</code> と入力して Enter を押します（アプリの一覧が開きます）。</li>
+<li>アプリの一覧の「ポチキャプ」を、スタートアップ フォルダーへドラッグします（ショートカットが作られます）。</li>
+<li>次回の Windows へのサインイン時から、ポチキャプが自動で起動します。</li>
+<li>やめる場合は、スタートアップ フォルダーのポチキャプのショートカットを削除します。</li>
+</ol>
+<h2 id="quick-start">かんたんな使い方</h2>
 <ol>
 <li>見せたいウィンドウを前に出して、<strong>Alt+Shift+S</strong> を押します（5 秒後に撮るときは <strong>Alt+Shift+D</strong>）。</li>
 <li>編集画面が開きます。必要なら、四角枠・番号・モザイクで分かりやすくします。</li>
 <li>編集画面を右上の <strong>&#215;</strong> で閉じると、画像がクリップボードへコピーされます。</li>
 <li>AI チャットやメールなどの入力欄で <strong>Ctrl+V</strong> を押して貼り付けます。</li>
 </ol>
-<h2>画像付きの手順</h2>
+<h2 id="steps">画像付きの手順</h2>
 <h3>1. タスクトレイに常駐します</h3>
 <p class="shot"><img src="img/tray-menu.png" alt="タスクトレイのメニュー（自動保存・保存先を選択・保存先を開く・ショートカット・終了）" width="153" height="120" loading="lazy"></p>
 <p>タスクトレイのポチキャプのアイコンを右クリックすると、このメニューが開きます。自動保存・保存先・ショートカットの設定と終了は、ここから行います。</p>
@@ -45,13 +91,13 @@
 <h3>5. ショートカットは変更できます</h3>
 <p class="shot"><img src="img/shortcut-dialog.png" alt="ショートカットの設定のダイアログ" width="514" height="226" loading="lazy"></p>
 <p>メニューの「ショートカット…」から、「すぐに撮影」と「5 秒後に撮影」のキーを変更できます（Ctrl または Alt ＋ キー。Shift は追加できます）。</p>
-<h2>ショートカット</h2>
+<h2 id="shortcuts">ショートカット</h2>
 <ul>
 <li>すぐに撮影：<strong>Alt+Shift+S</strong>（既定）</li>
 <li>5 秒後に撮影：<strong>Alt+Shift+D</strong>（既定）</li>
 <li>タスクトレイのメニューの「ショートカット…」から変更できます。</li>
 </ul>
-<h2>できること</h2>
+<h2 id="features">できること</h2>
 <ul>
 <li>四角枠（赤・黄・青の 3 色）</li>
 <li>番号（置いた順に 1・2・3… と自動で増えます）</li>
@@ -61,7 +107,7 @@
 <li>編集画面を閉じると、画像がクリップボードへコピーされます（PNG）</li>
 <li>自動保存（ON にすると、選んだフォルダーに PNG を保存します）</li>
 </ul>
-<h2>困ったとき</h2>
+<h2 id="troubleshooting">困ったとき</h2>
 <ul>
 <li><strong>インストールしたのに何も起きない</strong>：ポチキャプは画面を開かず、タスクトレイに常駐します。上の「インストールしたあとは」をご覧ください。</li>
 <li><strong>ショートカットが効かない</strong>：ほかのアプリが同じキーを使っている場合があります。タスクトレイのメニューの「ショートカット…」から別のキーに変更してください。</li>
@@ -69,24 +115,26 @@
 <li><strong>保存した画像の場所</strong>：自動保存が ON のとき、タスクトレイのメニューの「保存先を開く」で保存先フォルダーを開けます。</li>
 <li><strong>アンインストール</strong>：下の「アンインストール」をご覧ください。</li>
 </ul>
-<h2>動作環境</h2>
+<h2 id="requirements">動作環境</h2>
 <p>Windows 11（x64）</p>
-<h2>入手と更新</h2>
+<h2 id="get-and-update">入手と更新</h2>
 <ul>
 <li>Microsoft Store から入手できます（無料）。</li>
 <li>更新は Microsoft Store を通じて配信されます。更新の受け取り方は、利用者の Microsoft Store の設定に従います。</li>
 </ul>
-<h2>データの扱い</h2>
+<h2 id="data">データの扱い</h2>
 <ul>
 <li>提供者は、本アプリを通じて利用者の情報を収集しません。キャプチャした画像や利用状況を提供者へ送信しません。</li>
 <li>編集画面の表示に使う Microsoft Edge WebView2 Runtime が、Microsoft のサービスと通信する場合があります。</li>
 <li>詳しくは<a href="../privacy/">プライバシーポリシー</a>をご覧ください。</li>
 </ul>
-<h2>アンインストール</h2>
+<h2 id="uninstall">アンインストール</h2>
 <p>Windows の設定からアンインストールできます。アンインストールすると、設定と編集画面の表示部品のデータ（本アプリ専用のデータ領域）は削除されます。自動保存で選んだ保存先フォルダーに保存された画像は削除されず、残ります。</p>
-<h2>利用条件</h2>
+<h2 id="terms">利用条件</h2>
 <p>本アプリには、Microsoft Standard Application License Terms が適用されます。</p>
-<h2>お問い合わせ</h2>
+<h2 id="contact">お問い合わせ</h2>
 <p>pochicapinfo@gmail.com</p>
+</main>
+</div>
 </body>
 </html>
